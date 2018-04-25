@@ -1,0 +1,88 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.containerz{
+  width:100%;
+  height:100vh;
+  background: radial-gradient(circle, #006600, #004d00, #003300);
+}
+.outcome{
+  padding:10px;
+  height:10vh;
+}
+.score,.moves,.bank,.bet{
+  height:5vh;
+}
+.board {
+  height:50vh;
+}
+.coins{
+  height:20vh;
+}
+.card{
+  width:25%;
+  height:40%;
+  border:1px solid black;
+  margin-top:20px;
+  padding-left:10px;
+  font-size:30px;
+  box-shadow: 1px 2px black;
+  background: linear-gradient(to right,  white,#f2f2f2);
+}
+.coin{
+  margin-top:30px;
+  height:75px;
+  width:75px;
+  background-color:white;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 2px;
+}
+#player-cards,#dealer-cards {
+  display:flex;
+  flex-wrap:wrap 
+}
+a{
+ cursor:pointer;
+}
+#deal,#hit,#stand {
+  width:100px;
+}
+
+.ten{
+  border:4px dashed blue;
+}
+.hundred{
+  border:4px dashed green;
+}
+.five{
+  border:4px dashed black;
+}
+.allin{
+  border:4px dashed red;
+}
+#flip{
+  background: linear-gradient(-90deg, red, #660000);
+}
+.slide{
+  animation: slide 1s;
+}
+@keyframes slide{
+  0% {
+    opacity:0;
+    transform: translateY(-100px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.text-border{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.row{
+  margin:0 !important;
+}
